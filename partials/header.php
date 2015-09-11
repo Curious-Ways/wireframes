@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Linking Mobile - Wireframes</title>
-  <meta name="description" content="Linking Mobile - Wireframes">
+  <title>Back to Front - Wireframes</title>
+  <meta name="description" content="Back to Front - Wireframes">
   <meta name="author" content="Stone Creative Design">
 
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
