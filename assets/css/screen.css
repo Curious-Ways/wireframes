@@ -32,13 +32,16 @@ img {
   background: #9e9f9a;
   padding: 20px;
   font-size: 18px;
-  text-align: center; }
+  text-align: center;
+  height: 50px; }
   .box p, .box-thin p, .box-med p, .box-fat p {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0; }
 
 .box-thin {
   padding: 10px 20px; }

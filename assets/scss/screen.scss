@@ -91,14 +91,17 @@ img {
 
 // Boxes 
 .box {
-	@extend %clearfix;
-	background: $clr-2;
-	padding: 20px;
-	font-size: 18px;
-	text-align: center;
+  @extend %clearfix;
+  background: $clr-2;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  height: 50px;
 
   p {
     @include v-align;
+    margin: 0;
+    padding: 0;
   }
 }
 
