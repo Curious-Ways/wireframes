@@ -20,6 +20,11 @@ body {
 .content-wrapper.alt {
   background: #fff; }
 
+.content-wrapper_full {
+  background: #444;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+
 a:link, a:visited {
   color: #444;
   text-decoration: none; }
