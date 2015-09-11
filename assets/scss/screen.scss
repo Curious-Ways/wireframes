@@ -96,6 +96,10 @@ img {
 	padding: 20px;
 	font-size: 18px;
 	text-align: center;
+
+  p {
+    @include v-align;
+  }
 }
 
 .box-thin {
@@ -105,12 +109,12 @@ img {
 
 .box-med {
 	@extend .box;
-	min-height: 150px
+	height: 150px
 }
 
 .box-fat {
 	@extend .box;
-	min-height: 300px;
+	height: 300px;
 }
 
 

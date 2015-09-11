@@ -33,15 +33,21 @@ img {
   padding: 20px;
   font-size: 18px;
   text-align: center; }
+  .box p, .box-thin p, .box-med p, .box-fat p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 .box-thin {
   padding: 10px 20px; }
 
 .box-med {
-  min-height: 150px; }
+  height: 150px; }
 
 .box-fat {
-  min-height: 300px; }
+  height: 300px; }
 
 @media (min-width: 768px) {
   .align-r {
