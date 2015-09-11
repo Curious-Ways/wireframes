@@ -1,0 +1,105 @@
+.gridoverlay {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px !important; }
+
+.content-wrapper:after, .content-wrapper .content-block:after, .box:after, .box-thin:after, .box-med:after, .box-fat:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  color: #404040;
+  background: #fff;
+  font-family: "A2 Regular Semi Bold", Futura, sans-serif; }
+
+.content-wrapper .content-block {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 0 10px 0; }
+.content-wrapper.alt {
+  background: #fff; }
+
+a:link, a:visited {
+  color: #444;
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.box, .box-thin, .box-med, .box-fat {
+  background: #9e9f9a;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center; }
+
+.box-thin {
+  padding: 10px 20px; }
+
+.box-med {
+  min-height: 150px; }
+
+.box-fat {
+  min-height: 300px; }
+
+@media (min-width: 768px) {
+  .align-r {
+    text-align: right; } }
+
+.align-l {
+  text-align: left; }
+
+.align-c {
+  text-align: center; }
+
+.no-margin {
+  margin-bottom: 0; }
+
+.anchor {
+  padding-top: 60px; }
+
+.wireframes-intro {
+  background: #76ced9;
+  height: 100vh; }
+  .wireframes-intro .content {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center; }
+
+.site-logo {
+  max-width: 200px; }
+
+.site-title {
+  font-size: 3em;
+  margin: 0 0 20px 0;
+  padding: 0; }
+
+.site-subtitle {
+  font-size: 1em;
+  margin: 0;
+  padding: 0; }
+
+.site-navigation-strip {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: #76ced9;
+  z-index: 100; }
+  .site-navigation-strip .site-navigation {
+    text-align: center; }
+    .site-navigation-strip .site-navigation li {
+      display: inline-block;
+      margin-right: 20px; }
+    .site-navigation-strip .site-navigation a {
+      font-size: 0.8em;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+
+.wireframe-title {
+  padding-top: 80px; }

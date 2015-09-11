@@ -1,0 +1,196 @@
+// Vars
+
+$max-width: 1140px;
+
+$clr-1: #ffcf44; // Bright Sun
+$clr-2: #9e9f9a; // Star Dust
+$clr-3: #f8b6ba; // Illusion
+$clr-4: #76c58c; // De York
+$clr-5: #76ced9; // Viking
+$clr-6: #8781bd; // Wild Blue Yonder
+
+$space: 20px;
+
+// Sizes
+@function em($target, $context: $base-fnt-size) {
+ @if $target == 0 { @return 0 }
+ @return $target / $context + 0em;
+}
+
+$fnt-giga: em(60px, 20px);
+$fnt-xlrg: em(50px, 20px);
+$fnt-lrg: em(30px, 20px);
+$fnt-med: em(20px, 20px);
+$fnt-reg: em(20px, 20px);
+$fnt-sml: em(16px, 20px);
+$fnt-btn: em(16px, 20px);
+
+// Gridset 
+// -------------
+
+.gridoverlay {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 20px !important;
+}	
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// V Align
+@mixin v-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+// All
+
+body {
+	color: #404040;
+	background: #fff;
+	font-family: "A2 Regular Semi Bold", Futura, sans-serif;
+}
+
+// Wrappers
+.content-wrapper {
+	@extend %clearfix;
+
+	.content-block {
+		@extend %clearfix;
+		max-width: $max-width;	
+		margin: auto;
+		padding: 0 0 10px 0;
+	}
+
+	&.alt {
+		background: #fff;
+	}
+}
+
+// Links 
+a:link, a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+// Images
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+// Boxes 
+.box {
+	@extend %clearfix;
+	background: $clr-2;
+	padding: 20px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.box-thin {
+	@extend .box;
+	padding: 10px 20px;
+}
+
+.box-med {
+	@extend .box;
+	min-height: 150px
+}
+
+.box-fat {
+	@extend .box;
+	min-height: 300px;
+}
+
+
+// Misc
+.align-r {
+	@media (min-width: 768px) {
+		text-align: right;
+	}
+}
+
+.align-l {
+	text-align: left;
+}
+
+.align-c {
+	text-align: center;
+}
+
+.no-margin {
+	margin-bottom: 0;
+}
+
+// Intro page
+
+  .anchor {
+    padding-top: 60px;
+  }
+
+  .wireframes-intro {
+    background: $clr-5;
+    height: 100vh;
+
+    .content {
+      color: #fff;
+      @include v-align;
+      text-align: center;
+    }
+  }
+
+    .site-logo {
+      max-width: 200px;
+    } 
+
+  .site-title {
+    font-size: $fnt-giga;
+    margin: 0 0 $space 0;
+    padding: 0;
+  }
+
+  .site-subtitle {
+    font-size: $fnt-med;
+    margin: 0;
+    padding: 0;    
+  }
+
+  .site-navigation-strip {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background: $clr-5;
+    z-index: 100;
+
+    .site-navigation {
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin-right: $space;
+      }
+
+      a {
+        font-size: $fnt-sml;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }   
+  }
+
+// Wireframe titles
+.wireframe-title {
+	padding-top: 80px;
+}
