@@ -1,5 +1,9 @@
 <?php include 'partials/header.php'; ?>
 
+<div class="show-hide-wrapper">
+  <p><a class="trigger">On / Off</a></p>
+</div>
+
 <div id="home" class="content-wrapper wireframe-title">
 	<div class="content-block">
 		

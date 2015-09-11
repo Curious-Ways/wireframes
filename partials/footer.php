@@ -1,7 +1,7 @@
 	</main>
 
   <script src="https://get.gridsetapp.com/34037/overlay/"></script>
-  
+
 	<script>
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
@@ -19,5 +19,13 @@
 		});
 		</script>
 
+		<script>
+			$( ".trigger" ).click(function() {
+			  $( ".site-navigation-strip, .wireframe-title" ).toggle( "fast", function() {
+			    // Animation complete.
+			  });
+			});
+		</script>
+	
 </body>
 </html>

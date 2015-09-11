@@ -211,3 +211,18 @@ img {
 .wireframe-title {
 	padding-top: 80px;
 }
+
+.show-hide-wrapper {
+  background: #fff;
+  padding: 5px 7px;
+  font-size: $fnt-sml;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+  }
+}
