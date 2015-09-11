@@ -6,7 +6,8 @@
 
   <title>Back to Front - Wireframes</title>
   <meta name="description" content="Back to Front - Wireframes">
-  <meta name="author" content="Stone Creative Design">
+  <meta name="author" content="Back to Front">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
 
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 
